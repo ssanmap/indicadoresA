@@ -1,0 +1,34 @@
+<app-header></app-header>
+<div class="container-fluid">
+
+  <div class="col-md-10 m-4">
+    <h1 class="text-center">Gráfico </h1>
+    <br>
+
+    <div *ngIf="!loading; else Block">
+     <app-loading></app-loading>
+    </div>
+
+    <ng-template #Block>
+      <h2 class="text-center text-primary"> $ {{first}}</h2>
+      <div class="row">
+        <div class="col-sm-6 mx-auto text-center mt-4 text-left">
+          <p class="text-align-end">Nombre :  {{data?.nombre}}</p>
+          <p>Fecha :  {{dateI}}</p>
+          <p>Unidad de Medida :  {{data?.unidad_medida}}</p>
+
+          <button class="btn btn-primary" routerLink="/">Volver</button>
+        </div>
+        <div class="col-sm-6">
+          <h1 class="text-center">Revisión</h1>
+          <app-chart [data]="data"  ></app-chart>
+
+        </div>
+      </div>
+
+    </ng-template>
+
+
+
+  </div>
+</div>

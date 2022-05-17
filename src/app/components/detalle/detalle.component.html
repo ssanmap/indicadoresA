@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="col-md-10 m-4">
+    <h1 class="text-center">Detalle Por Días </h1>
+
+
+    <div *ngIf="!loading; else Blocke">
+      <app-loading></app-loading>
+     </div>
+     <ng-template #Blocke>
+
+      <div class="row">
+        <div class="col-sm-8 mx-auto">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody  >
+              <tr *ngFor="let item of data; index as i;">
+                <th scope="row">{{i}}</th>
+                <td > <a  routerLink="">{{item.fecha | date:'mediumDate' }} </a></td>
+                <td> $ {{item.valor }} </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+     </ng-template>
+
+
+  </div>
+</div>

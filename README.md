@@ -1,27 +1,29 @@
-# Indicators
+# Prueba 3 IT SEBASTIAN
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+Para probar los ejemplos de este repositorio, teclea los siguientes comandos:
 
-## Development server
+1. Clona este repositorio en local:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+```console
+git clone https://github.com/LuisJoseSanchez/iniciacion-a-angular.git
+```
 
-## Code scaffolding
+2. Entra en el directorio del proyecto:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```console
+cd iniciacion-a-angular
+```
 
-## Build
+3. Instala las dependencias:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```console
+npm install
+```
 
-## Running unit tests
+4. Lanza el servidor para ver la aplicación en http://localhost:4200/:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```console
+ng serve
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+La página principal en la que se cargan todos los ejemplos es `app.component.html`:
